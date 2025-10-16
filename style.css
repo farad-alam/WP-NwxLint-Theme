@@ -17,4 +17,21 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 
 body {
     background-color: rgb(248, 207, 207);
+   
+    font-family: "Roboto", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+   /* font-family: "Monsieur La Doulaise", cursive; */
+    font-family: "Oswald", sans-serif;
+}
+
+/* Header Area */
+.logo-img{
+    height: 60px;
+    width: 60px;
+}
+.custom-logo {
+  width: 60px !important;
+  height: 60px !important;
+  object-fit: contain; /* keeps proportions inside the box */
 }
