@@ -1,6 +1,7 @@
 <?php
-
-
+/**
+ * Footer template
+ */
 ?>
 
     <!-- Footer Section -->
@@ -8,57 +9,50 @@
         <!-- Main Footer Content -->
         <div class="container mx-auto px-4 py-12">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- About Section -->
+                <!-- About Section (left, spans 2 cols) -->
+                <!-- Quick Links (Footer 1) -->
                 <div class="lg:col-span-2">
-                    <h3 class="text-xl font-bold mb-4">About Our Blog</h3>
-                    <p class="text-gray-400 mb-4">
-                        We're passionate about sharing knowledge, insights, and stories that matter. 
-                        Our blog covers a wide range of topics from technology to lifestyle, 
-                        always aiming to provide valuable content for our readers.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
+                    <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
+                        <?php dynamic_sidebar( 'footer-1' ); ?>
+                    <?php else: ?>
+                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog Categories</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Write for Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        </ul>
+                    <?php endif; ?>
                 </div>
 
-                <!-- Quick Links -->
+                <!-- Newsletter (Footer 2) -->
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog Categories</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Write for Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-                    </ul>
+                    <?php if ( is_active_sidebar( 'footer-2' ) ) : ?>
+                        <?php dynamic_sidebar( 'footer-2' ); ?>
+                    <?php else: ?>
+                        <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                        <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates and articles.</p>
+                        <form class="space-y-2">
+                            <input type="email" placeholder="Your email address" 
+                                   class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <button type="submit" 
+                                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                                Subscribe
+                            </button>
+                        </form>
+                    <?php endif; ?>
                 </div>
 
-                <!-- Newsletter -->
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Newsletter</h3>
-                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates and articles.</p>
-                    <form class="space-y-2">
-                        <input type="email" placeholder="Your email address" 
-                               class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <button type="submit" 
-                                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
-                            Subscribe
-                        </button>
-                    </form>
+                <!-- Footer 3 (extra widget) -->
+                <div class="lg:col-span-1">
+                    <?php if ( is_active_sidebar( 'footer-3' ) ) : ?>
+                        <?php dynamic_sidebar( 'footer-3' ); ?>
+                    <?php else: ?>
+                        <!-- optional fallback content -->
+                        <h3 class="text-xl font-bold mb-4">More</h3>
+                        <p class="text-gray-400 text-sm">Add extra info or links here via Widgets → Appearance → Widgets.</p>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -68,7 +62,7 @@
             <div class="container mx-auto px-4 py-6">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <p class="text-gray-400 text-sm mb-4 md:mb-0">
-                        &copy; 2023 Your Blog Name. All rights reserved.
+                        &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.
                     </p>
                     <div class="flex space-x-6">
                         <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
@@ -80,6 +74,6 @@
         </div>
     </footer>
 
-<?php  wp_footer(); ?>
+<?php wp_footer(); ?>
 </body>
 </html>

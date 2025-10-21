@@ -1,3 +1,4 @@
+
 <?php 
 get_header();
 ?>
@@ -6,15 +7,12 @@ get_header();
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
       <!-- Main column (left) -->
       <section class="lg:col-span-8">
-        <h1 class="text-3xl font-bold mb-6">Latest Articles</h1>
 
-        <!-- Blog list -->
+        <!-- Blog Content -->
         <div class="space-y-6">
           <!-- Blog card (repeat for multiple posts) -->
-           <?php get_template_part('parts/blog_setup') ?>
+           <?php get_template_part('parts/post_setup') ?>
         </div>
-
-        <?php get_template_part('parts/pagination' ) ?>
       </section>
 
       <!-- Sidebar (right) -->
