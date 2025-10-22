@@ -9,12 +9,14 @@
         <!-- Main Footer Content -->
         <div class="container mx-auto px-4 py-12">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
                 <!-- About Section (left, spans 2 cols) -->
                 <!-- Quick Links (Footer 1) -->
                 <div class="lg:col-span-2">
                     <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
                         <?php dynamic_sidebar( 'footer-1' ); ?>
                     <?php else: ?>
+                        
                         <h3 class="text-xl font-bold mb-4">Quick Links</h3>
                         <ul class="space-y-2">
                             <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>

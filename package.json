@@ -1,0 +1,28 @@
+{
+  "name": "nexlint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i input/in-tailwind.css -o css/out-tailwind.css --watch",
+    "build": "tailwindcss -i input/in-tailwind.css -o css/out-tailwind.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farad-alam/WP-NwxLint-Theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farad-alam/WP-NwxLint-Theme/issues"
+  },
+  "homepage": "https://github.com/farad-alam/WP-NwxLint-Theme#readme",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.18"
+  }
+}
