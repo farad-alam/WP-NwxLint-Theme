@@ -2,11 +2,7 @@ p {
   font-size: 14px;
 }
 
-.colors {
-  color: aqua;
-  font-weight: bold;
-  font-size: 56px;
-}
+
 
 /*
 Nav Menu Style
@@ -15,8 +11,8 @@ Nav Menu Style
 
 /* ---------- NAV WRAPPER ---------- */
 #site-nav {
-  background:#ffffff;
-  border-bottom:1px solid #e6e6e6;
+  background: var(--color-primary);
+  border-bottom:1px solid var(--color-text);
   font-family: Inter, Poppins, Arial, sans-serif;
 }
 
@@ -40,7 +36,7 @@ Nav Menu Style
 #site-nav .menu > li > a {
   display:inline-block;
   padding:18px 12px;
-  color:#222;
+  color: var(--color-bg);
   text-decoration:none;
   font-weight:500;
   transition: color .18s ease, background .18s ease;
@@ -49,17 +45,18 @@ Nav Menu Style
 /* hover/focus on top-level */
 #site-nav .menu > li > a:hover,
 #site-nav .menu > li > a:focus {
-  color:#0073aa;
+  background: var(--color-primary-light);
   outline: none;
+  
 }
 
 /* current / active menu item */
 #site-nav .menu .current-menu-item > a,
 #site-nav .menu .current_page_item > a {
   color:#fff;
-  background:#0073aa;
+  background: var(--color-primary-light);
   border-radius:6px;
-  padding:12px 14px;
+  padding:6px 12px;
 }
 
 /* ---------- DROPDOWN (sub-menu) ---------- */
@@ -70,10 +67,10 @@ Nav Menu Style
   top:100%;
   left:0;
   min-width:220px;
-  margin:8px 0 0 0;
+  margin:2px 0 0 0;
   padding:8px 6px;
-  background:#fff;
-  border:1px solid #e6e6e6;
+  background: var(--color-primary);
+  border:1px solid var(--color-primary-light);
   border-radius:8px;
   box-shadow:0 8px 20px rgba(0,0,0,0.06);
   z-index:999;
@@ -89,7 +86,7 @@ Nav Menu Style
 #site-nav .menu .sub-menu li a {
   display:block;
   padding:10px 14px;
-  color:#333;
+  color: var(--color-bg);
   font-weight:400;
   text-decoration:none;
   border-radius:6px;
@@ -98,15 +95,15 @@ Nav Menu Style
 /* dropdown item hover */
 #site-nav .menu .sub-menu li a:hover,
 #site-nav .menu .sub-menu li a:focus {
-  background:#f5f7f8;
-  color:#0073aa;
+  background: var(--color-primary-light);
+  color: var(--color-bg);
 }
 
 /* deeper level (flyout) */
 #site-nav .menu .sub-menu .sub-menu {
   top:0;
   left:100%;
-  margin-left:8px;
+  margin-left:2px;
 }
 
 /* small caret for parents */
@@ -125,6 +122,13 @@ Nav Menu Style
   border-left-color:#666;
   transform:none;
 }
+
+
+
+
+
+
+
 
 /* ---------- RESPONSIVE (MOBILE) ---------- */
 #site-nav .mobile-toggle { display:none; }

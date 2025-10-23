@@ -6,9 +6,9 @@ function nexlint_widget_register(){
         'name' => __("Main Area Widget", "faradalam"),
         'id' => 'sidebar-1',
         'description' => __('This MAIN widget will appear in sidebar', 'faradalam'),
-        'before_widget' => '<div class="child_sidebar">',
+        'before_widget' => '<div class="child_sidebar nexlint-widget">',
         'after_widget' => '</div>',
-        'before_title' => '<h2 class="widget_title">',
+        'before_title' => '<h2 class="widget_title nexlint-widget-title">',
         'after_title' => '</h2>'
     ) );
 

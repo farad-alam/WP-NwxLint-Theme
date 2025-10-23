@@ -18,12 +18,12 @@ function nexlint_style_and_script_enqueue(){
         file_exists($custom_css_path) ? filemtime( $custom_css_path ) : null
     );
 
-    // Tailwind CDN (developer CDN, good for local/dev). Use the official script:
+    // Tailwind CSS
     $output_tailwindcss = get_template_directory_uri() . "/css/out-tailwind.css";
     wp_enqueue_style(
         'tailwindcss',
         $output_tailwindcss,
-        array(),
+        array( 'wp-block-library' ),
         file_exists($output_tailwindcss) ? filemtime( $output_tailwindcss ) : '1.0.0',
         false // load in head so utilities are available for your CSS/HTML
     );

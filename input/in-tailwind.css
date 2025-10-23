@@ -1,3 +1,12 @@
+:root {
+  --color-primary: #c026d3; /* default primary */
+  --color-primary-light: #d946ef;
+  --color-secondary: #4338ca; /* default secondary */
+  --color-bg: #ffffff; /* default background */
+  --color-hover: #4f46e5; /* default hover */
+  --color-text: #111827; /* default text */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +14,29 @@
 
 @layer components {
   .theme-btn {
-    @apply bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700;
+    @apply bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-secondary;
+  }
+
+  .nexlint-widget {
+    @apply p-3 border border-neutral-300 rounded-lg shadow-md;
+  }
+
+  .nexlint-widget > ul > li {
+    @apply border border-stone-200 rounded-lg shadow p-2 mb-3;
+  }
+  .nexlint-widget > ul > li > a {
+    @apply text-secondary hover:text-hover;
+  }
+
+  .nexlint-widget h2 {
+    @apply border-l-4  pl-2 ;
+  }
+
+  .nexlint-widget input[type="search"] {
+    @apply flex-1 border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-hover;
+  }
+
+  .nexlint-widget button {
+    @apply px-2 py-1 rounded-md bg-secondary text-white;
   }
 }

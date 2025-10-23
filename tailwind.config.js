@@ -10,24 +10,18 @@ export default {
     "./inc/**/*.php",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "var(--color-primary)",
+        primary_light: "var(--color-primary-light)",
+        secondary: "var(--color-secondary)",
+        background: "var(--color-bg)",
+        hover: "var(--color-hover)",
+        text: "var(--color-text)",
+      },
+    },
   },
   plugins: [],
 };
-// module.exports = {
-//   content: [
-//     "./*.php",
-//     "./**/*.php",
-//     "./src/**/*.{js,jsx,ts,tsx}",
-//     "./templates/**/*.php",
-//     "./parts/**/*.php",
-//     "./inc/**/*.php",
-//   ],
-//   theme: {
-//     extend: {
-//       // your custom colors, fonts etc
-//     },
-//   },
-//   plugins: [],
-// }
+
 

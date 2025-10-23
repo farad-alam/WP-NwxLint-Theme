@@ -34,7 +34,7 @@
 
                             <div class="mt-4 flex items-center justify-between">
                               <div class="text-xs text-gray-500"><?php echo get_the_date( 'M j, Y' ); ?> • <?php echo esc_html( get_post_meta( get_the_ID(), 'reading_time', true ) ?: '5 min read' ); ?></div>
-                              <a href="<?php the_permalink(); ?>" class="inline-flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md bg-indigo-600 text-white hover:bg-indigo-700">Read more
+                              <a href="<?php the_permalink(); ?>" class="inline-flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md bg-secondary text-white hover:bg-hover">Read more
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                               </a>
                             </div>

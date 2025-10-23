@@ -7,7 +7,7 @@ get_header();
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
       <!-- Main column (left) -->
       <section class="lg:col-span-8">
-
+       
         <!-- Blog Content -->
         <div class="space-y-6">
           <!-- Blog card (repeat for multiple posts) -->

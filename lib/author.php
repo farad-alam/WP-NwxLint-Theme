@@ -333,7 +333,7 @@ $author = get_userdata($author_id);
                         Want to get in touch with <?php echo esc_html($author->display_name); ?>?
                     </p>
                     <a href="mailto:<?php echo esc_attr($author->user_email); ?>" 
-                       class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors text-center block">
+                       class="w-full bg-blue-600 hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg transition-colors text-center block">
                         Send Email
                     </a>
                 </div>

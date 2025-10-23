@@ -83,7 +83,7 @@ function nexlint_pagination() {
             foreach ($links as $link) {
                 // Check if this link is the current page
                 if (strpos($link, 'current') !== false) {
-                    echo '<span class="px-3 py-1 bg-indigo-600 text-white rounded-md text-sm">' . $link . '</span>';
+                    echo '<span class="px-3 py-1 bg-secondary text-white rounded-md text-sm">' . $link . '</span>';
                 } else {
                     // Normal link
                     echo str_replace(

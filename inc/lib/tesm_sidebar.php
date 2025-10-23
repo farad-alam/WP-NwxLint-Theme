@@ -8,7 +8,7 @@
               <label for="search-sidebar" class="sr-only">Search posts</label>
               <div class="flex gap-2">
                 <input id="search-sidebar" type="text" placeholder="Search posts" class="flex-1 border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-200" />
-                <button class="px-3 py-2 rounded-md bg-indigo-600 text-white text-sm">Go</button>
+                <button class="px-3 py-2 rounded-md bg-secondary text-white text-sm">Go</button>
               </div>
             </form>
           </div>
@@ -52,7 +52,7 @@
             <form>
               <label for="email-sub" class="sr-only">Email</label>
               <input id="email-sub" type="email" placeholder="Your email" class="w-full border rounded-md px-3 py-2 text-sm mb-3 focus:outline-none focus:ring-2 focus:ring-indigo-200" />
-              <button class="w-full px-4 py-2 rounded-md bg-indigo-600 text-white">Subscribe</button>
+              <button class="w-full px-4 py-2 rounded-md bg-secondary text-white">Subscribe</button>
             </form>
           </div>
 

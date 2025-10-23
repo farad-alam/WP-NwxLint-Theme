@@ -34,14 +34,14 @@ if ( $menu_position === 'right_menu' ) {
 <!-- Header Area -->
 
 
-<header class="bg-white border-b">
+<header class="bg-primary border-b">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex <?= $flex_class ?> items-center">
       <!-- Logo -->
       <div class="flex items-center">
         <a href="<?= esc_url( home_url("/")) ?>" class="flex items-center gap-3">
           <img src="<?php echo get_theme_mod( 'nexlint_logo', get_template_directory_uri() . '/img/nexlint-logo.jpg' ); ?>" alt="Logo" class="w-10 h-10 rounded-md object-cover">
-          <span class="text-xl font-semibold tracking-tight">
+          <span class="text-xl text-background font-semibold tracking-tight">
             <?php bloginfo( "name"); ?>
           </span>
         </a>
@@ -63,7 +63,7 @@ if ( $menu_position === 'right_menu' ) {
       ?>
       <!-- Button -->
       <div class="hidden lg:flex" >
-        <a class="text-decoration-none px-3 py-2 rounded-xl bg-blue-500 text-blue-50" href="/">Contact Us</a>
+        <a class="text-decoration-none px-3 py-2 rounded-xl bg-secondary hover:bg-hover text-white" href="/">Contact Us</a>
       </div>
     </div>
   </div>
