@@ -1,7 +1,7 @@
 <?php
 function nexlint_theme_setup() {
     add_theme_support( "title-tag");
-    add_theme_support( "post-thumbnails", array("post", "page"));
+    add_theme_support( "post-thumbnails", array("post", "page", 'portfolio'));
 //     add_theme_support( 'custom-logo', array(
 //         'height'      => 60,
 //         'width'       => 60,

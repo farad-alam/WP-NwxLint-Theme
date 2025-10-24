@@ -10,6 +10,9 @@ include_once("inc/enqueue.php");
 // Customizer Register
 include_once("inc/customizer_register.php");
 
+// Customizer Register
+include_once("inc/custom_post.php");
+
 // widget Register
 include_once("inc/widget_register.php");
 
